@@ -57,3 +57,8 @@ python Hospital_3.py
 - The included dataset is auto-generated; no sensitive data is used.
 - Ensure MySQL server is running and the `hospital` database exists.
 - Python 3.13+ is recommended.
+
+## Output
+
+![alt text](image.png)
+
