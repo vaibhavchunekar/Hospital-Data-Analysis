@@ -81,15 +81,19 @@ def visualize_data(data):
         plt.title("Distribution of Visitors_with_Patient")
         plt.xlabel('Visitors_with_Patient')
         plt.ylabel('Frequency')
+        plt.savefig("Visitors_with_Patient.png")  # image 1             
         plt.show()
 
-    # Correlation heatmap (numeric columns only)
+     # Correlation heatmap (numeric columns only)
     numeric_data = data.select_dtypes(include='number')
     plt.figure(figsize=(12, 8))
     sns.heatmap(numeric_data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
     plt.title("Correlation Heatmap")
+    plt.savefig("correlation_heatmap.png")  # Image 2
     plt.show()
 
+
+    
 # Main execution
 if __name__ == "__main__":
     # Fetch data from MySQL
